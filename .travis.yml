@@ -5,7 +5,7 @@ services:
 script:
   - docker build -t singh0009/react-test -f ./client/Dockerfile.dev ./client
   - docker images
-  - docker run  -e CI=true singh0009/docker-react npm run test
+  - docker run  -e CI=true singh0009/react-test npm run test
 
 after_success:
   - docker build -t singh0009/multi-client ./client 
