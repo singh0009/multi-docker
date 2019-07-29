@@ -27,7 +27,7 @@
             "image":"singh0009/multi-nginx",
             "hostanme":"nginx",
             "essential":true,
-            "portMapping": [
+            "portMappings": [
                 {
                     "hostPort": 80,
                     "containerPort": 80
